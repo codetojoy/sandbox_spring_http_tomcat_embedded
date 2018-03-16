@@ -11,7 +11,7 @@
     * starts BillingService on 5152
 * in terminal 3: `./run_compound_service.sh`
     * starts CompoundService on 5153
-* in terminal 4: `./client/staging/bin/client`
+* in terminal 4: `./run_client.sh`
 
 ### Commands
 

@@ -1,9 +1,6 @@
 
 package net.codetojoy.server; 
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import net.codetojoy.common.Payment;
 import net.codetojoy.common.BillingService;
 
@@ -29,13 +26,4 @@ public class BillingServiceImpl implements BillingService {
         Payment payment = new Payment(name, accountId, amount);
         return payment;
     }
-
-    /*
-    public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("server_config.xml");
-
-        context.getBean("billingService");
-        System.out.println("\n\nTRACER: Billing Service ready !");
-    }
-    */
 }

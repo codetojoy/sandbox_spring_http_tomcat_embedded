@@ -1,9 +1,6 @@
 
 package net.codetojoy.server; 
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import net.codetojoy.common.User;
 import net.codetojoy.common.UserService;
 
@@ -27,13 +24,4 @@ public class UserServiceImpl implements UserService {
         User user = new User(name, id);
         return user;
     }
-
-    /*
-    public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("server_config.xml");
-
-        context.getBean("httpServer");
-        System.out.println("\n\nTRACER: User Service ready !");
-    }
-    */
 }
